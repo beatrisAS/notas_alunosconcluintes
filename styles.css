@@ -1,0 +1,126 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+   
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilo do Título */
+h2.text-center {
+    background-color: #006266; 
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-weight: 600;
+}
+
+/* Estilo da Tabela */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Números e Nomes em Negrito */
+.table td {
+    font-weight: bold; 
+    padding: 12px 15px;
+    vertical-align: middle;
+}
+
+/* Linhas da Tabela */
+.table tbody tr {
+    transition: all 0.3s ease;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.table tbody tr:hover {
+    background-color: #f1f8ff;
+}
+
+/* Efeito de Relevo ao Clicar */
+.table tbody tr:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Células da Tabela */
+.table td {
+    padding: 12px 15px;
+    vertical-align: middle;
+}
+
+/* Estilo para Aprovados */
+.aprovado {
+    color: #28a745; 
+    font-weight: 600;
+}
+
+/* Estilo para Reprovados e Notas abaixo da média */
+.reprovado,
+.table tbody tr td[data-below-average="true"] {
+    color: #dc3545; 
+    font-weight: 600;
+}
+
+/* Campo de Busca */
+#search {
+    margin-bottom: 20px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+#search:focus {
+    border-color: #006266;
+    box-shadow: 0 0 0 0.2rem rgba(0, 98, 102, 0.25);
+}
+
+
+/* Efeito quando passa o mouse no nome do aluno */
+.aluno-nome:hover {
+    cursor: pointer;
+}
+
+/* Efeito na linha inteira quando hover no nome */
+.table tbody tr:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
+    transition: all 0.3s ease;
+    z-index: 10; 
+    position: relative;
+    background-color: white; 
+    border-radius: 4px; 
+    border: 1px solid #e0e0e0; 
+}
+
+/* Ajuste para evitar quebra de layout */
+.table tbody tr {
+    transition: all 0.3s ease;
+    position: static; 
+}
+
+/* Melhora a visualização da sombra */
+.table tbody {
+    position: relative;
+    z-index: 1;
+}
+/* Responsividade */
+@media (max-width: 768px) {
+    .table {
+        display: block;
+        overflow-x: auto;
+    }
+}
